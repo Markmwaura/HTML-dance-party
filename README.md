@@ -1,2 +1,2 @@
 # HTML-dance-party
-This repository is for a dance party web page built using HTML and CSS
+This  is a CSS /HTML Dance Party website.Find it here ![Danceparty](http://dancewithaliens.bitballoon.com/)
