@@ -13,6 +13,11 @@ section h3 {
     position: absolute;
     z-index: 2000;
     top: 40%;
+    width: 225px;
+    height: 400px;
+    background-image: url(../assets/sprite.png);
+    animation: gangham 4s steps(23, start) infinite, movearound 12s steps(69, end) infinite alternate 44ms;
+    animation-direction: normal, alternate;
 
 }
 .page{
@@ -30,7 +35,7 @@ zoom:1;
 span {
     width: 225px;
     height: 400px;
-    background-image: url(http://estelle.github.com/10/files/sprite.png);
+    background-image: url(../assets/sprite.png);
     animation: gangham 4s steps(23, start) infinite, movearound 12s steps(69, end) infinite alternate 44ms;
     animation-direction: normal, alternate;
 }
@@ -115,6 +120,12 @@ p{
     100% {text-shadow:-9px 4px 0px teal;}
 }
 
+body {
+	margin:0;
+	height: 450px;
+	background:#98B8CF;
+	background-image: -webkit-linear-gradient(left , rgb(84,116,137) 0%, rgb(133,160,177) 50%, rgb(84,116,137) 100%);
+}
 #text {
 	margin-top:-150px;
 	margin-left:-120px;
@@ -330,18 +341,18 @@ div {
 	60%  {right:116px;}
 	to   {right:116px;}
 }
-#bodyman {
+#body {
 	height:66px;
 	width:56px;
 	background:#A7C6DB;
 	left:120px;
 	top:140px;
 	z-index:10;
-	-webkit-animation:bodyman 6s ease-in-out infinite;
-	-moz-animation:bodyman 6s ease-in-out infinite;
+	-webkit-animation:body 6s ease-in-out infinite;
+	-moz-animation:body 6s ease-in-out infinite;
 	-webkit-perspective:300;
 }
-#bodyman:before, #bodyman:after {
+#body:before, #body:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -351,19 +362,19 @@ div {
 	z-index: -1;
 	background-color: #A7C6DB;
 }
-#bodyman:before {
+#body:before {
 	-webkit-transform: skew(-5deg);
 	-moz-transform: skew(-5deg);
 	left: 5px;
 	border-right:1px solid #000;
 }
-#bodyman:after {
+#body:after {
 	-webkit-transform: skew(5deg);
 	-moz-transform: skew(5deg);
 	left: -5px;
 	border-left:1px solid #000;
 }
-@-webkit-keyframes bodyman {
+@-webkit-keyframes body {
 	from {top:135px; left:122px; -webkit-transform:rotateZ(  0deg);}
 	05%  {top:150px; left:122px; -webkit-transform:rotateZ(  0deg);}
 	10%  {top:135px; left:122px; -webkit-transform:rotateZ(  0deg);}
@@ -383,7 +394,7 @@ div {
 	90%  {top:142px; left:129px; -webkit-transform:rotateZ( 10deg) translateX(75%);}
 	to   {top:135px; left:122px; -webkit-transform:rotateZ(  0deg);}
 }
-@-moz-keyframes bodyman {
+@-moz-keyframes body {
 	from {top:135px; left:122px; -moz-transform:rotateZ(  0deg);}
 	05%  {top:150px; left:122px; -moz-transform:rotateZ(  0deg);}
 	10%  {top:135px; left:122px; -moz-transform:rotateZ(  0deg);}
